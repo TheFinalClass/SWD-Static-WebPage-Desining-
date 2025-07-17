@@ -1,0 +1,21 @@
+<html>
+<head>
+<title> practical 21 A </title>
+<script>
+function factorial()
+{
+var n,fact=1;
+n=Number(document.getElementById("a").value);
+for(let i=1;i<=n;i++)
+	{fact=fact*i;}
+document.getElementById("b").value=fact;
+}
+</script>
+</head>
+<body>
+Enter number:<input id="a">
+<button onclick="factorial()">factorial</button><br>
+result:<input id="b">
+</body>
+</html>
+

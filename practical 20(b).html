@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>practical 20(b)</title>
+<script>
+function getvalue(list)
+{
+document.getElementsByTagName("body")[0].bgColor=list.value;
+}
+</script>
+</head>
+<body>
+<lable>click for change color</lable>
+<select name="list" onchange="getvalue(this)">
+<option>select</option>
+<option value="yellow">yellow</option>
+<option value="green">green</option>
+<option value="pink">pink</option>
+<option value="blue">blue</option>
+<option value="red">red</option>
+</select>
+</body>
+</html>

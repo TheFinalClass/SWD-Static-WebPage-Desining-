@@ -1,0 +1,44 @@
+<html>
+<head>
+<script>
+function add()
+{
+a=Number(document.mycal.first.value);
+b=Number(document.mycal.second.value);
+c=a+b;
+document.mycal.total.value=c;
+}
+function sub()
+{
+a=Number(document.mycal.first.value);
+b=Number(document.mycal.second.value);
+c=a-b;
+document.mycal.total.value=c;
+}
+function multi()
+{
+a=Number(document.mycal.first.value);
+b=Number(document.mycal.second.value);
+c=a*b;
+document.mycal.total.value=c;
+}
+function div()
+{
+a=Number(document.mycal.first.value);
+b=Number(document.mycal.second.value);
+c=a/b;
+document.mycal.total.value=c;
+}
+</script>
+</head>
+<body>
+<form name="mycal">
+number 1:<input type="text" name="first"><br>
+number 2:<input type="text" name="second"><br>
+<input type="radio" value="add" name="operation" onclick="add()">addition<br>
+<input type="radio" value="minus" name="operation" onclick="sub()">subtraction<br>
+<input type="radio" value="multi" name="operation" onclick="multi()">multiplication<br>
+<input type="radio" value="div" name="operation" onclick="div()">division<br>
+get result:<input name="total">
+</body>
+</html> 

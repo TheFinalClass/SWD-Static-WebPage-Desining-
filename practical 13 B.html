@@ -1,0 +1,28 @@
+<html>
+<head>
+<title> Practical 13-B </title>
+<script>
+	function largest()
+		{
+			let n1,n2,n3
+n1=Number(document.getElementById("a").value);
+n2=Number(document.getElementById("b").value);
+n3=Number(document.getElementById("c").value);
+	if(n1>n2 && n1>n3)
+	{window.alert(n1+" is largest");}
+	else if (n2>n1 && n2>n3)
+	{window.alert(n2+" is largest");}
+	else
+	{window.alert(n3+" is largest");}
+		}
+</script>
+</head>
+<body>
+<form>
+	enter number1:<input type="text"id="a"><br>
+	enter number2:<input type="text"id="b"><br>
+	enter number3:<input type="text"id="c"><br>
+	<button onclick="largest()">OK</button>
+</form>
+</body>
+</html>
